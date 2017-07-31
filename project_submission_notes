@@ -1,0 +1,71 @@
+Project Submission
+
+Choose any area of the world in https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the OpenStreetMap data for a part of the world that you care about. Choose to learn SQL or MongoDB and apply your chosen schema to the project.
+
+Student response shows understanding of the process of auditing, and ways to correct or standardize the data, including dealing with problems specific to the location, e.g. related to language or traditional ways of formatting.
+
+Some of the problems encountered during data audit are cleaned programmatically.
+
+The OSM XML file is at least 50 MB uncompressed.
+
+Database queries are used to provide a statistical overview of the dataset, like:
+
+size of the file
+number of unique users
+number of nodes and ways
+number of chosen type of nodes, like cafes, shops etc.
+Additional statistics not in the list above are computed. For SQL submissions some queries make use of more than one table.
+
+The submission document includes the database queries and statistics from above.
+
+Submission document includes one or more additional suggestions for improving the data or its analysis. The suggestions are backed up by at least one investigative query.
+
+Submission document includes thoughtful discussion about the benefits as well as some anticipated problems in implementing the improvement.
+
+
+Submission document is long enough to thoroughly answer the questions asked without giving unnecessary detail. A good general guideline is that the question responses should take about 3-6 pages.
+
+Ready to submit your project? Collect the following files:
+
+(answers_to_rubric.pdf) A pdf document containing your answers to the rubric questions. This file should document your data wrangling process.
+
+(subway_wrangling.ipynb) Your Python code you used in auditing and cleaning your dataset for the final project. You may also include the original Case Study scripts, but make sure it is clear which code was used for the project, and which applies to the lesson quizzes. We recommend including a Readme file to describe the contents of each file you include in your submission.
+
+(map_choosen.txt) A text file containing a link to the map position you wrangled in your project, a short description of the area and a reason for your choice.
+
+(bs_as_subway.osm) An .osm file containing a sample part of the map region you used (around 1 - 10 MB in size). See the notes below.
+
+( references_used.txt) A text file containing a list of Web sites, books, forums, blog posts, github repositories etc that you referred to or used in this submission (Add N/A if you did not use such resources).
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Fix Subway information for buenos aires
+	by adding a k:v pair with Line information and
+	remove trailing "()" references in station names and
+	use "expected" with actual subway info
+First undergound system in Latin America
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

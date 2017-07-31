@@ -1,0 +1,63 @@
+answers_to_rubric.pdf 
+
+Code Functionality
+------------------
+Criteria : Final project code functionality reflects the description in the project document.
+
+Code Readability
+----------------
+Criteria : Final project code follows an intuitive, easy-to-follow logical structure.
+Criteria : Final project code that is not intuitively readable is well-documented with comments.
+
+Problems encountered in your map
+--------------------------------
+Criteria : Student response shows understanding of the process of auditing, and ways to correct or standardize the data, including dealing 			   with problems specific to the location, e.g. related to language or traditional ways of formatting.
+Criteria : Some of the problems encountered during data audit are cleaned programmatically.
+
+Firts step , given the experience we got with the case study, is to familiarize with the data.
+Data , in this case, is in XML format and , before getting into the data, i got interested in understand how the map of subway stations got formatted in OSM. So i found, mostly, this information on "subway station" OSM nodes :
+
+        <node id="256241854" lat="-34.639835" lon="-58.458014" version="13" timestamp="2017-05-03T14:31:10Z" changeset="48367783" uid="51045" user="Geogast">
+                <tag k="name" v="Varela"/>
+                <tag k="public_transport" v="stop_position"/>
+                <tag k="railway" v="station"/>
+                <tag k="start_date" v="1985-10-31"/>
+                <tag k="station" v="subway"/>
+                <tag k="subway" v="yes"/>
+                <tag k="wikidata" v="Q3296869"/>
+        </node>
+
+
+So basically information about the subway in OSM could be improved with one additional field or key/value pair whisch is the information about the subway line for that station. There are 7 subway lines in Buenos Aires identified by the following letters (A,B,C,D,E,H and P).
+Some of the station names in OSM has a reference (between paretheses) to the line like "station_name (B)" but none all of them. So it is not only an improvement to clean the names (take away the reference in the name) but  also an opportunity to add additional important information because the subway line gives you the chance to understand subway convinations for a better transportation in the city.
+
+++ ET.iterparse covert each tag as an event so it reads the file one tag at a time
+++ puedo pasarle events specificos como segundo argumento (p je. "start") lo cual significa que me devolvera event, elem por cada start tag "<" a partir de ahi puedo revisar cada elem.tag en busca de uno en especial (ej. if elem.tag == "way") y de ahi llamar "iter" para ver las subtags por ejempl for tag in elem.iter("tag")
+
+Overview of the data
+---------------------
+Criteria : The OSM XML file is at least 50 MB uncompressed.
+
+Original file downloaded from OSM metro extracts is around 400 MB in size so a reduced file of 5 mb was created using dd (count=20000)
+
+Criteria : Database queries are used to provide a statistical overview of the dataset, like:
+
+size of the file
+number of unique users
+number of nodes and ways
+number of chosen type of nodes, like cafes, shops etc.
+Additional statistics not in the list above are computed. For SQL submissions some queries make use of more than one table.
+
+Criteria : The submission document includes the database queries and statistics from above.
+
+Other ideas about the dataset
+------------------------------
+Criteria : Submission document includes one or more additional suggestions for improving the data or its analysis. The suggestions are backed 			 up by at least one investigative query.
+Criteria : Submission document includes thoughtful discussion about the benefits as well as some anticipated problems in implementing the 			   improvement.
+
+Thoroughness and Succinctness of Submission
+-------------------------------------------
+Criteria : Submission document is long enough to thoroughly answer the questions asked without giving unnecessary detail. A good general 			   guideline is that the question responses should take about 3-6 pages.
+
+
+
