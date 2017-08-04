@@ -1,14 +1,5 @@
 # normalized_stations.py
 
-# data structure build from -mapa-subte.jpg file to associate subway stations with their corresponding subway line
-# It is a list of dictionaries where each dict has the station letter as key and a list of stations as value
-# Station names are accesed as stations_list_for_a_line = stations_to_lines[0-7][line-letter]
-# if this are the "expected" names and i reach all the places where subway stations are named i will reach a point
-# were i will have a list/dict of non expected -like the weirdo street names-
-# kind of "audit_station_names func" ....audit function review the dataset and call is_station_name (this function should look for
-# this sequence k = railway v = station k = station v = subway k = subway  v = yes k = name    v = Pichincha ....in a node and find the
-# name key ...if found, call audit_station_names) 
-# then we need to update_station_names for failed ones and then add the subway line information
 stations_to_lines = [
 					{ "A" : ["Plaza de Mayo", "Peru", "Piedras", "Lima", "Saenz Pena", "Congreso", "Pasco", "Alberti", "Plaza Miserere", "Loria", "Castro Barros", "Rio de Janeiro", "Acoyte", "Primera Junta", "Puan", "Carabobo", "San Jose de Flores", "San Pedrito"] },
 
